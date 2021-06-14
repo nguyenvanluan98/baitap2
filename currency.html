@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  <title>Currency</title>
+</head>
+<link rel="stylesheet" href="currency.css">
+
+<body>
+  <form></form>
+
+
+  <h1>Chuyển Đổi Tiền Tệ $ </h1>
+  <input type="number" id="currency" oninput="chuyen1()" placeholder="Nhập Sồ Tiền">
+
+  <div class="select1">
+    <select onchange="chuyen1()" id="currency1">
+      <option value="23044">VND</option>
+      <option selected value="1">USD</option>
+      <option value="0.83">EUR</option>
+      <option value="0.71">GPB</option>
+      <option value="0.014">RUB</option>
+    </select>
+  </div>
+
+  <div class="select2">
+    <select onchange="chuyen1()" id="currency2">
+      <option value="23044">VND </option>
+      <option value="1">USD</option>
+      <option value="0.83">EUR</option>
+      <option value="0.71">GPB</option>
+      <option value="0.014">RUB</option>
+    </select>
+  </div>
+
+
+  <div class="row1">
+    <span id="hienthi"> </span>
+  </div>
+
+
+
+  </form>
+  <script>
+    function chuyen1() {
+      money = document.getElementById("currency").value;
+      cdoi1 = document.getElementById("currency1").value;
+      cdoi2 = document.getElementById("currency2").value;
+      ketqua = money * cdoi2 / cdoi1;
+      document.getElementById("hienthi").innerText = ketqua.toFixed(2);
+
+    }
+
+
+
+  </script>
+  <br>
+  <div class="return">
+    <a href="index.html"> Trở về trang chủ</a>
+  </div>
+</body>
+
+</html>

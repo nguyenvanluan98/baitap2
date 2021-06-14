@@ -1,0 +1,61 @@
+* {
+    box-sizing: border-box;
+    
+}
+
+body {
+   background-color: gainsboro;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  
+  }
+h1 {
+    margin: 10 20  ;
+    color: cornflowerblue;
+  }
+  .row1{
+      text-align: center;
+      margin-top: 30px;
+      height: 40px;
+      width: 30%;
+      background-color: deepskyblue;
+      color: white
+      
+  }
+ select{
+    background-color: lightblue;
+    border-radius: 5px;
+    appearance: none;
+ }
+  .select1 select {
+      /* margin-left: 300px; */
+    border: 1px solid;
+    overflow: hidden; 
+    width: 100px; 
+    
+  }
+  .select2 select {
+    /* margin-right: 300px; */
+    border: 1px solid;
+    overflow: hidden; 
+    width: 100px; 
+  }
+  input[type=number] {
+    width: 30%;
+    padding: 12px 20px;
+    margin: 8px 0;
+    box-sizing: border-box;
+    border-radius: 1px;
+    background-color: deepskyblue;
+    color: white
+   
+    
+  }
+  .return a{
+    text-decoration: none;  
+    
+  }
+
+ 

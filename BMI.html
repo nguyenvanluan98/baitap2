@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>BMI</title>
+</head>
+<link rel="stylesheet" href="BMI.css">
+
+<body>
+    <form action="">
+        <h1>BMI</h1>
+        <div class="input1">
+            <P>Chiều cao (cm)</P>
+            <input type="text" id="chieucao" placeholder="Nhập chiều cao">
+        </div>
+        <div class="input2">
+            <p>Cân nặng (kg)</p>
+            <input type="text" id="cannang" placeholder="Nhập Cân nặng">
+        </div>
+
+        <button type="button" onclick="btn()">Kết Quả</button>
+        <div>
+            <span id="kq"></span>
+        </div>
+
+    </form>
+    <script>
+        function btn() {
+            //nhập dữ liệu
+            cao = document.getElementById("chieucao").value;
+            nan = document.getElementById("cannang").value;
+            ketqua = document.getElementById("kq")
+            // check 
+            if (cao === "" || isNaN(cao))
+                ketqua.innerHTML = "Vui lòng nhập chiều cao !";
+            else if
+                (nan === "" || isNaN(nan))
+                ketqua.innerHTML = "Vui lòng nhập cân nặng !";
+            else {
+                cao = cao / 100;
+                bmi = (nan / (cao * cao)).toFixed(2);
+                kq = "IBM: " + bmi + "<br>";
+                if (bmi < 18.6)
+                    kq += "Thiếu Cân";
+                else if ((bmi >= 18.6 && bmi < 24.9)) {
+                    kq += "Bình Thường";
+                } else {
+                    kq += "Thừa Cân";
+                }
+
+                ketqua.innerHTML = kq;
+            }
+
+
+        }
+
+
+
+    </script>
+    <br>
+    <div class="return">
+        <a href="index.html"> Trở về trang chủ</a>
+    </div>
+   
+</body>
+
+</html>

@@ -1,0 +1,71 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    font-family: arial
+}
+
+/* Định dạng header */
+.head {
+background-color: #d8eaf4;
+color: #58257b;
+padding: 10px;
+text-align: center;
+}
+.topnav {
+    overflow: hidden;
+    background-color: #2f83bb;
+}
+
+/* Định dạng link điều hướng */
+.topnav a {
+    float: left;
+    display: block;
+    color: #f2f2f2;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+}
+
+/* Thay đổi màu liên kết khi di chuột qua */
+.topnav a:hover {
+    background-color: #7ad414;
+    color: white;
+    font-weight: bold
+}
+footer{
+    background-color:#ccc;
+    text-align:center;
+    padding:25px;
+    font-size:18px;
+}
+.fa {
+    padding: 20px;
+    font-size: 30px;
+    width: 30px;
+    text-align: center;
+    text-decoration: none;
+    margin: 5px 2px;
+    border-radius: 50%;
+  }
+  
+  .fa:hover {
+      opacity: 0.7;
+  }
+  
+  .fa-facebook {
+    background: #3B5998;
+    color: white;
+  }
+  
+  .fa-twitter {
+    background: #55ACEE;
+    color: white;
+  }
+  
+  .fa-google {
+    background: #dd4b39;
+    color: white;
+  }
